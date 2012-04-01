@@ -1,0 +1,663 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/js-test-driver/wiki/TestCase" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"profileUrl":null,"token":null,"assetHostPath":"http://www.gstatic.com/codesite/ph","domainName":null,"assetVersionPath":"http://www.gstatic.com/codesite/ph/4535224061731617360","projectHomeUrl":"/p/js-test-driver","relativeBaseUrl":"","projectName":"js-test-driver","loggedInUserEmail":null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ 
+ </script>
+ 
+ 
+ <title>TestCase - 
+ js-test-driver -
+ 
+ Everything you need to know about writing tests. - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/4535224061731617360/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/4535224061731617360/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/svnchanges/basic?path=/wiki/TestCase.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/4535224061731617360/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+</script>
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FTestCase&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FTestCase" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="http://www.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">TestCase</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Everything you need to know about writing tests.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Oct 13 10:02:30 2010">
+ Oct 13, 2010</span>
+ 
+ by <a style="white-space: nowrap" href="/u/aeagle22206/">aeagle22206</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Declaring_a"></a>Declaring a <a href="/p/js-test-driver/wiki/TestCase">TestCase</a><a href="#Declaring_a" class="section_anchor"></a></h1><p>It is necessary to tell the test runner about your tests suites. Most test runners deal with this by letting you build up test suites. This can be tedious and error prone resulting for un-run tests. In JsTestDriver we register the test case during the declaration phase. There are two ways to declare tests in the <a href="/p/js-test-driver/wiki/TestCase">TestCase</a>. </p><p>Using prototype: </p><pre class="prettyprint">MyTestCase = TestCase(&quot;MyTestCase&quot;);
+
+MyTestCase.prototype.testA = function(){
+};
+
+MyTestCase.prototype.testB = function(){
+};</pre><p>Using inline declaration:  </p><pre class="prettyprint">TestCase(&quot;MyTestCase&quot;, {
+    testA:function(){
+    },
+    testB:function(){
+    }
+  });</pre><h1><a name="Test_life-cycle"></a>Test life-cycle<a href="#Test_life-cycle" class="section_anchor"></a></h1><p>When tests execute they follow JUnit life-cycle: <ol><li>Instantiate new instance of <a href="/p/js-test-driver/wiki/TestCase">TestCase</a> for each test method. </li><li>Execute the <tt>setUp()</tt> method. </li><li>Execute the <tt>testMethod()</tt> method. </li><li>Execute the <tt>tearDown()</tt> method. </li></ol></p><h1><a name="Asserts"></a>Asserts<a href="#Asserts" class="section_anchor"></a></h1><p>The asserts are declared in <a href="http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/javascript/Asserts.js" rel="nofollow">Asserts.js</a>. They follow JUnit assert conventions. This means that first argument is message and is optionally followed by expected and actual values. </p><h2><a name="expectAsserts(count)"></a><tt>expectAsserts(count)</tt><a href="#expectAsserts(count)" class="section_anchor"></a></h2><p>This asserts tells the JsTestDriver how many asserts to expect. This is useful with callbacks. </p><pre class="prettyprint">MyTestCase.prototype.testExample = function () {
+  expectAsserts(1);
+  var worker = new Worker();
+  var doSomething = {};
+  worker.listener = function (work){
+    assertSame(doSomething, work);
+  };
+  worker.perform(doSomething);
+};</pre><p>In the above example we have a callback function which contains an <tt>assert</tt>. However if the <tt>Worker</tt> does not call the callback function than the test would pass even thought the callback did not get called. To prevent this false positive the <tt>expectAsserts</tt> tells the test runner that the test is only valid if one <tt>assert</tt> has been called. </p><h2><a name="fail([msg])"></a><tt>fail([msg])</tt><a href="#fail([msg])" class="section_anchor"></a></h2><h2><a name="assertTrue([msg],_actual)"></a><tt>assertTrue([msg], actual)</tt><a href="#assertTrue([msg],_actual)" class="section_anchor"></a></h2><h2><a name="assertFalse([msg],_actual)"></a><tt>assertFalse([msg], actual)</tt><a href="#assertFalse([msg],_actual)" class="section_anchor"></a></h2><h2><a name="assertEquals([msg],_expected,_actual)"></a><tt>assertEquals([msg], expected, actual)</tt><a href="#assertEquals([msg],_expected,_actual)" class="section_anchor"></a></h2><h2><a name="assertSame([msg],_expected,_actual)"></a><tt>assertSame([msg], expected, actual)</tt><a href="#assertSame([msg],_expected,_actual)" class="section_anchor"></a></h2><h2><a name="assertNotSame([msg],_expected,_actual)"></a><tt>assertNotSame([msg], expected, actual)</tt><a href="#assertNotSame([msg],_expected,_actual)" class="section_anchor"></a></h2><h2><a name="assertNull([msg],_actual)"></a><tt>assertNull([msg], actual)</tt><a href="#assertNull([msg],_actual)" class="section_anchor"></a></h2><h2><a name="assertNotNull([msg],_actual)"></a><tt>assertNotNull([msg], actual)</tt><a href="#assertNotNull([msg],_actual)" class="section_anchor"></a></h2><h1><a name="Console"></a>Console<a href="#Console" class="section_anchor"></a></h1><p>Some browsers provide console object which can be forwarded to the test runner output with <tt>-captureConsole</tt> flag. See <a href="/p/js-test-driver/wiki/CommandLineFlags">CommandLineFlags</a>. In addition there is <tt>jstestdriver.console</tt> class provided for you which is always forwarded to the test runners standard output. </p><pre class="prettyprint">ConsoleTest = TestCase(&quot;ConsoleTest&quot;);
+
+ConsoleTest.prototype.testGreet = function() {
+  jstestdriver.console.log(&quot;JsTestDriver&quot;, &quot;Hello World!&quot;);
+  console.log(&quot;Browser&quot;, &quot;Hello World!&quot;);
+};</pre><p>The result of the above test when run is shown (the browser message will only be shown when <tt>-captureConsole</tt> is used.) </p><pre class="prettyprint">$ java -jar JsTestDriver.jar --tests all --captureConsole
+.
+Total 1 tests (Passed: 1; Fails: 0; Errors: 0) (1.00 ms)
+  Safari 528.16: Run 1 tests (Passed: 1; Fails: 0; Errors 0) (1.00 ms)
+    ConsoleTest.testGreet passed (1.00 ms)
+      [LOG] JsTestDriver Hello World!
+      [LOG] Browser Hello World!</pre>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/seasprocket@gmail.com/">seasprocket@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Aug  6 17:43:12 2010">Aug 6, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>This list of asserts is out-of-date. More complete list is documented in <a href="http://code.google.com/p/js-test-driver/wiki/Assertions" rel="nofollow">Assertions</a>. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/108255209556179194829/">julian.b...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Oct 30 01:10:31 2010">Oct 30, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Would probably be worth mentioning that the inline declaration form <i>requires</i> tests to begin with &quot;test&quot;. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/102720727384945314712/">machineg...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Dec 27 17:39:30 2010">Dec 27, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;ll second Julian&#x27;s comment (and it seemed to have the same issue with the protoypal form for me as well). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/105009766412274176330/">dewilh...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Apr 21 17:46:30 2011">Apr 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>jslint is not happy that you made a capitalized function which is not a constructor function. Any chance you can you provide an alternate lowercase version ?  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/105009766412274176330/">dewilh...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Apr 21 17:47:11 2011">Apr 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m referring to the <a href="/p/js-test-driver/wiki/TestCase">TestCase</a> function, btw :)  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/105009766412274176330/">dewilh...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Apr 21 17:59:26 2011">Apr 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>/<strong>jslint newcap:false</strong>/ </p><p>also works, if you&#x27;re running a recent build of jslint.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ <a style="white-space: nowrap" href="/u/105136162983346148159/">Carlos.V...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 16 16:40:05 2011">Jun 16, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to specify a Testing Suite? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FTestCase&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FTestCase"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="TestCase" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+
+ <script src="http://www.gstatic.com/codesite/ph/4535224061731617360/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/4535224061731617360/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/4535224061731617360/js/ph_core.js"></script>
+ 
+ 
+ 
+ 
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+</div> 
+<div id="footer" dir="ltr">
+ <div class="text">
+ &copy;2011 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

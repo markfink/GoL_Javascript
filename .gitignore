@@ -1,0 +1,18 @@
+# Folders
+research/
+built/
+build/
+artwork/
+bak/
+env/
+testresults/
+
+*.pyc
+*.class
+*.egg
+*.*~
+*~
+.coverage
+*.nja
+*.bak
+
