@@ -1,4 +1,4 @@
-gol = (function() {
+gol = function() {
 
 	var Board = function(width, height) {
 		this.width = width;
@@ -28,6 +28,7 @@ gol = (function() {
 	}
 
 	Board.prototype.nextGeneration = function() {
+	    /* Use the GoL rules to calculate the next generation */
 		var newBoard = new Board(this.width, this.height);
 		for (var x = 0; x < this.width; x++) {
 			for (var y = 0; y < this.height; y++) {
@@ -41,6 +42,7 @@ gol = (function() {
 	}
 	
 	Board.prototype.countNeighbors = function(x, y) {
+	    /* count the active neighbors of a given cell */
 	    var count = 0;
 	    for (var i=-1; i<2; i++) {
 	        for (var j=-1; j<2; j++) {
@@ -59,6 +61,7 @@ gol = (function() {
 	}
 	
 	Board.prototype.batch = function(cells) {
+	    /* load a batch of active cells */
         //jstestdriver.console.log('Moin, moin');
 	    for (var i=0; i<cells.length; i++) {
 	        this.birth(cells[i][0], cells[i][1]);
@@ -69,7 +72,45 @@ gol = (function() {
         return this.array.toString();
     }
 
+    Board.prototype.draw = function(ctx, cellSize, cellColor,
+        activeCellColor) {
+        /* draw the board onto HTML5 canvas */
+   		for (var x = 0; x < this.width; x++) {
+			for (var y = 0; y < this.height; y++) {
+                if (this.isAlive(x, y))
+                    ctx.fillStyle = activeCellColor;
+                else
+                    ctx.fillStyle = cellColor;
+                ctx.fillRect(x*cellSize, y*cellSize, 
+                    (x+1)*cellSize, (y+1)*cellSize);
+            }
+        }
+    }
 
-	return {'Board': Board}
+    Board.prototype.cycle = function(ctx, cellSize, cellColor,
+        activeCellColor) {
+        /* put the next livecycle onto the eventloop */
+        var that = this;
+        if (this.running) {
+            setTimeout(function() {
+                that.draw(ctx, cellSize, cellColor,
+                    activeCellColor);
+                var newBoard = that.nextGeneration();
+                newBoard.running = that.running;
+                newBoard.cycle(ctx, cellSize, cellColor,
+                    activeCellColor);
+            }, 50);
+        }
+    }
 
-}());
+    Board.prototype.run = function(canvas, cellSize, cellColor,
+        activeCellColor) {
+        /* start GoL player */
+        this.running = true;
+        var ctx = canvas.getContext("2d");
+        this.cycle(ctx, cellSize, cellColor, activeCellColor);
+    }
+
+
+	return {'Board': Board};
+}();

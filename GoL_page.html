@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<script src="src/GoL.js" type="text/javascript" ></script>
+<script type="text/javascript">
+window.onload=function() {
+    var cellSize = 8;
+    var cellColor = '#FFFFFF';
+    var activeCellColor = '#000080';
+    var board = new gol.Board(40, 28);
+    // start with a glider
+    board.batch([[0, 2],[1, 0],[1, 2],[2, 1],[2, 2]]);
+    var canvas = document.getElementById("golCanvas");
+    board.run(canvas, cellSize, cellColor, activeCellColor);
+}
+</script>
+</head>
+
+<body>
+
+<canvas id="golCanvas" width="320" height="224" 
+    style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+
+</body>
+</html>
+

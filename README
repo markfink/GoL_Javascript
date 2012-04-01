@@ -1,0 +1,13 @@
+I currently work for Kuehne & Nagel. We follow "Clean Code" and they invited me to take part on a company sponsored code retreat last Saturday.
+
+Here some background info on the format:
+http://coderetreat.com/
+
+I never took a deeper look into Conways Game of Live before so I was astonished about how much complexity can emerge from such a small set of simple rules (think fractals).
+
+We did TDD and pair programming with focus on different aspects. Something I wanted to get going was to do TDD Javascript development. We used JsTestDriver for that and figured out how to do it.
+
+On rule of a code retreat is to start each 45 min round from scratch with a new partner. So we could not finish the exercise. So for today I wanted to finish the exercise with a running version.
+
+
+
